@@ -9,9 +9,26 @@ import SwiftUI
 
 @main
 struct XKCDApp: App {
+    
+    @StateObject private var comicFetcher = ComicFetcher()
+    @StateObject private var favoriteComics = FavoriteComics()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                if comicFetcher.comics.isEmpty {
+                    SplashView()
+                } else {
+                    HomeView()
+                }
+            }
+            .task {
+                try? await comicFetcher.fetchComics(with: 10)
+            }
+            .environmentObject(comicFetcher)
+            .environmentObject(favoriteComics)
+            .environmentObject(VisitedComics())
+            
         }
     }
 }
