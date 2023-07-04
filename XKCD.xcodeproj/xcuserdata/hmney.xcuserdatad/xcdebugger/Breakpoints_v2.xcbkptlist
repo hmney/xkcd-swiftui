@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AC0020DE-1E6B-4504-B7DC-0F392316AFDE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DEACF16-63A5-45EA-8762-65911E5848B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XKCD/ComicFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "save(comics:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2DEACF16-63A5-45EA-8762-65911E5848B2 - 85e2c5699c8dc834"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for XKCD.ComicFetcher.save(comics: Swift.Array&lt;XKCD.Comic&gt;) async throws -&gt; ()"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/ComicFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "2DEACF16-63A5-45EA-8762-65911E5848B2 - b6178af12719d2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for XKCD.ComicFetcher.save(comics: Swift.Array&lt;XKCD.Comic&gt;) async throws -&gt; ()"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/ComicFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "2DEACF16-63A5-45EA-8762-65911E5848B2 - 7c3b6828565f0c2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for XKCD.ComicFetcher.save(comics: Swift.Array&lt;XKCD.Comic&gt;) async throws -&gt; ()"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/ComicFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "2DEACF16-63A5-45EA-8762-65911E5848B2 - 68a0ba8b0b37ae2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for XKCD.ComicFetcher.save(comics: Swift.Array&lt;XKCD.Comic&gt;) async throws -&gt; ()"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/ComicFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "2DEACF16-63A5-45EA-8762-65911E5848B2 - 85e2c5699c8dc8f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for XKCD.ComicFetcher.save(comics: Swift.Array&lt;XKCD.Comic&gt;) async throws -&gt; ()"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/ComicFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "2DEACF16-63A5-45EA-8762-65911E5848B2 - 9b5177f5f1bf9ef0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; () in XKCD.ComicFetcher.save(comics: Swift.Array&lt;XKCD.Comic&gt;) async throws -&gt; ()"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/ComicFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "2DEACF16-63A5-45EA-8762-65911E5848B2 - a0e6fd35cc005f70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in XKCD.ComicFetcher.save(comics: Swift.Array&lt;XKCD.Comic&gt;) async throws -&gt; ()"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/ComicFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56A8D7F8-3740-4462-B5E2-4892D85B45D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XKCD/ComicFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "loadComics()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "56A8D7F8-3740-4462-B5E2-4892D85B45D4 - ed0863fbd7440e25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;XKCD.Comic&gt; in XKCD.ComicFetcher.loadComics() async throws -&gt; ()"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/ComicFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "512">
+               </Location>
+               <Location
+                  uuid = "56A8D7F8-3740-4462-B5E2-4892D85B45D4 - ed0863fbd7440e48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;XKCD.Comic&gt; in XKCD.ComicFetcher.loadComics() async throws -&gt; ()"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/ComicFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4051026B-270F-48ED-B85F-49FDD478721F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XKCD/XKCDApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "4051026B-270F-48ED-B85F-49FDD478721F - de279d592a09e969"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in XKCD.XKCDApp.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/XKCDApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "4051026B-270F-48ED-B85F-49FDD478721F - cf2704b2241d8f8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in XKCD.XKCDApp.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/XKCDApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "4051026B-270F-48ED-B85F-49FDD478721F - 4d24d33dc830b56b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in XKCD.XKCDApp.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/XKCDApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "4051026B-270F-48ED-B85F-49FDD478721F - 75a3aec218c3d36a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in XKCD.XKCDApp.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/XKCDApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "4051026B-270F-48ED-B85F-49FDD478721F - de279d592a09e969"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in XKCD.XKCDApp.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/XKCDApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E852B2F-15D7-4759-9212-F0ABB88A7D3D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XKCD/FavoritesView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent>
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "4E852B2F-15D7-4759-9212-F0ABB88A7D3D - c748c12774b49236"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XKCD.FavoritesView.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/FavoritesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "4E852B2F-15D7-4759-9212-F0ABB88A7D3D - 39335d6a4471791d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (XKCD.Comic) -&gt; Swift.Bool in XKCD.FavoritesView.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/FavoritesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "4E852B2F-15D7-4759-9212-F0ABB88A7D3D - c748c12774b49236"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XKCD.FavoritesView.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/FavoritesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D20D1762-E0EF-4A5B-97ED-104A9AAF526D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XKCD/Views/FavoritesView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D20D1762-E0EF-4A5B-97ED-104A9AAF526D - 4199a67f3c8194da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XKCD.FavoritesView.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/Views/FavoritesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "D20D1762-E0EF-4A5B-97ED-104A9AAF526D - 76279698768fa734"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;XKCD.ComicsGridView, SwiftUI.Text&gt; in XKCD.FavoritesView.body.getter : some"
+                  moduleName = "XKCD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hmney/Documents/Personal%20Projects/XKCD/XKCD/Views/FavoritesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
