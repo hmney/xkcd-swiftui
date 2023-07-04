@@ -8,17 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		310C76772A2520C2002AC892 /* XKCDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C76762A2520C2002AC892 /* XKCDApp.swift */; };
-		310C76792A2520C2002AC892 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C76782A2520C2002AC892 /* ContentView.swift */; };
+		310C76792A2520C2002AC892 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C76782A2520C2002AC892 /* SplashView.swift */; };
 		310C767B2A2520C4002AC892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310C767A2A2520C4002AC892 /* Assets.xcassets */; };
 		310C767E2A2520C4002AC892 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310C767D2A2520C4002AC892 /* Preview Assets.xcassets */; };
+		310C76852A261CDA002AC892 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C76842A261CDA002AC892 /* HomeView.swift */; };
+		310C76872A262D48002AC892 /* BookmarkedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C76862A262D48002AC892 /* BookmarkedView.swift */; };
+		310C76892A262E13002AC892 /* AllComicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C76882A262E13002AC892 /* AllComicsView.swift */; };
+		310C768B2A262EF6002AC892 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C768A2A262EF6002AC892 /* FavoritesView.swift */; };
+		310C768D2A263036002AC892 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C768C2A263036002AC892 /* SettingsView.swift */; };
+		310C768F2A266E49002AC892 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C768E2A266E49002AC892 /* Comic.swift */; };
+		310C76942A28DF3C002AC892 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 310C76932A28DF3C002AC892 /* Kingfisher */; };
+		310C76962A2B7A98002AC892 /* ComicFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C76952A2B7A98002AC892 /* ComicFetcher.swift */; };
+		31A5C05D2A3267540077C589 /* ComicViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A5C05C2A3267540077C589 /* ComicViewerView.swift */; };
+		31C29F972A541AD700B7FE5A /* xkcd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31C29F952A541AD700B7FE5A /* xkcd-Regular.otf */; };
+		31C29F982A541AD700B7FE5A /* xkcd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31C29F962A541AD700B7FE5A /* xkcd.otf */; };
+		31C29F9B2A541B7E00B7FE5A /* FontModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C29F9A2A541B7E00B7FE5A /* FontModifiers.swift */; };
+		31C29FA02A54D5EB00B7FE5A /* FavoriteComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C29F9F2A54D5EB00B7FE5A /* FavoriteComics.swift */; };
+		31C29FA22A54D61100B7FE5A /* VisitedComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C29FA12A54D61100B7FE5A /* VisitedComics.swift */; };
+		31C29FA42A54D62800B7FE5A /* ComicViewerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C29FA32A54D62800B7FE5A /* ComicViewerStore.swift */; };
+		31DE4DBC2A44877700AB324A /* ComicsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE4DBB2A44877700AB324A /* ComicsGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		310C76732A2520C2002AC892 /* XKCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310C76762A2520C2002AC892 /* XKCDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XKCDApp.swift; sourceTree = "<group>"; };
-		310C76782A2520C2002AC892 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		310C76782A2520C2002AC892 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		310C767A2A2520C4002AC892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		310C767D2A2520C4002AC892 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		310C76842A261CDA002AC892 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		310C76862A262D48002AC892 /* BookmarkedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedView.swift; sourceTree = "<group>"; };
+		310C76882A262E13002AC892 /* AllComicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllComicsView.swift; sourceTree = "<group>"; };
+		310C768A2A262EF6002AC892 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		310C768C2A263036002AC892 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		310C768E2A266E49002AC892 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		310C76952A2B7A98002AC892 /* ComicFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicFetcher.swift; sourceTree = "<group>"; };
+		31A5C05C2A3267540077C589 /* ComicViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewerView.swift; sourceTree = "<group>"; };
+		31C29F952A541AD700B7FE5A /* xkcd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "xkcd-Regular.otf"; path = "../../../../../../Downloads/xkcd-Regular.otf"; sourceTree = "<group>"; };
+		31C29F962A541AD700B7FE5A /* xkcd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = xkcd.otf; path = ../../../../../../Downloads/xkcd.otf; sourceTree = "<group>"; };
+		31C29F9A2A541B7E00B7FE5A /* FontModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontModifiers.swift; sourceTree = "<group>"; };
+		31C29F9C2A541EC600B7FE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		31C29F9F2A54D5EB00B7FE5A /* FavoriteComics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteComics.swift; sourceTree = "<group>"; };
+		31C29FA12A54D61100B7FE5A /* VisitedComics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedComics.swift; sourceTree = "<group>"; };
+		31C29FA32A54D62800B7FE5A /* ComicViewerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewerStore.swift; sourceTree = "<group>"; };
+		31DE4DBB2A44877700AB324A /* ComicsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310C76942A28DF3C002AC892 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +84,17 @@
 		310C76752A2520C2002AC892 /* XKCD */ = {
 			isa = PBXGroup;
 			children = (
+				31C29F9C2A541EC600B7FE5A /* Info.plist */,
+				31C29F992A541B5C00B7FE5A /* Common */,
+				31DE4DBE2A44936200AB324A /* Views */,
 				310C76762A2520C2002AC892 /* XKCDApp.swift */,
-				310C76782A2520C2002AC892 /* ContentView.swift */,
+				31DE4DBD2A44933300AB324A /* Models */,
+				310C76952A2B7A98002AC892 /* ComicFetcher.swift */,
+				31C29FA32A54D62800B7FE5A /* ComicViewerStore.swift */,
+				31C29F9F2A54D5EB00B7FE5A /* FavoriteComics.swift */,
+				31C29FA12A54D61100B7FE5A /* VisitedComics.swift */,
 				310C767A2A2520C4002AC892 /* Assets.xcassets */,
+				31C29F932A541AB300B7FE5A /* Ressources */,
 				310C767C2A2520C4002AC892 /* Preview Content */,
 			);
 			path = XKCD;
@@ -65,6 +106,54 @@
 				310C767D2A2520C4002AC892 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31C29F932A541AB300B7FE5A /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				31C29F942A541ABD00B7FE5A /* Fonts */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		31C29F942A541ABD00B7FE5A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				31C29F952A541AD700B7FE5A /* xkcd-Regular.otf */,
+				31C29F962A541AD700B7FE5A /* xkcd.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		31C29F992A541B5C00B7FE5A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				31C29F9A2A541B7E00B7FE5A /* FontModifiers.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		31DE4DBD2A44933300AB324A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				310C768E2A266E49002AC892 /* Comic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31DE4DBE2A44936200AB324A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				310C76842A261CDA002AC892 /* HomeView.swift */,
+				310C76882A262E13002AC892 /* AllComicsView.swift */,
+				31DE4DBB2A44877700AB324A /* ComicsGridView.swift */,
+				310C76862A262D48002AC892 /* BookmarkedView.swift */,
+				310C768A2A262EF6002AC892 /* FavoritesView.swift */,
+				310C768C2A263036002AC892 /* SettingsView.swift */,
+				310C76782A2520C2002AC892 /* SplashView.swift */,
+				31A5C05C2A3267540077C589 /* ComicViewerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +172,9 @@
 			dependencies = (
 			);
 			name = XKCD;
+			packageProductDependencies = (
+				310C76932A28DF3C002AC892 /* Kingfisher */,
+			);
 			productName = XKCD;
 			productReference = 310C76732A2520C2002AC892 /* XKCD.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +203,9 @@
 				Base,
 			);
 			mainGroup = 310C766A2A2520C2002AC892;
+			packageReferences = (
+				310C76922A28DF3C002AC892 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 310C76742A2520C2002AC892 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				310C767E2A2520C4002AC892 /* Preview Assets.xcassets in Resources */,
+				31C29F982A541AD700B7FE5A /* xkcd.otf in Resources */,
 				310C767B2A2520C4002AC892 /* Assets.xcassets in Resources */,
+				31C29F972A541AD700B7FE5A /* xkcd-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +234,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310C76792A2520C2002AC892 /* ContentView.swift in Sources */,
+				310C768D2A263036002AC892 /* SettingsView.swift in Sources */,
+				31C29FA02A54D5EB00B7FE5A /* FavoriteComics.swift in Sources */,
+				310C76892A262E13002AC892 /* AllComicsView.swift in Sources */,
+				310C76872A262D48002AC892 /* BookmarkedView.swift in Sources */,
+				310C768F2A266E49002AC892 /* Comic.swift in Sources */,
+				31A5C05D2A3267540077C589 /* ComicViewerView.swift in Sources */,
+				310C768B2A262EF6002AC892 /* FavoritesView.swift in Sources */,
+				310C76852A261CDA002AC892 /* HomeView.swift in Sources */,
+				310C76962A2B7A98002AC892 /* ComicFetcher.swift in Sources */,
+				31C29F9B2A541B7E00B7FE5A /* FontModifiers.swift in Sources */,
+				31DE4DBC2A44877700AB324A /* ComicsGridView.swift in Sources */,
+				310C76792A2520C2002AC892 /* SplashView.swift in Sources */,
+				31C29FA42A54D62800B7FE5A /* ComicViewerStore.swift in Sources */,
+				31C29FA22A54D61100B7FE5A /* VisitedComics.swift in Sources */,
 				310C76772A2520C2002AC892 /* XKCDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +380,8 @@
 				DEVELOPMENT_TEAM = VU2AQYJVVT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XKCD/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +411,8 @@
 				DEVELOPMENT_TEAM = VU2AQYJVVT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XKCD/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +453,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		310C76922A28DF3C002AC892 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		310C76932A28DF3C002AC892 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 310C76922A28DF3C002AC892 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 310C766B2A2520C2002AC892 /* Project object */;
 }
