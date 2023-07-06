@@ -23,7 +23,7 @@ struct XKCDApp: App {
                 }
             }
             .task {
-                try? await comicFetcher.fetchComics(with: 10)
+                try? await comicFetcher.fetchComics()
             }
             .environmentObject(comicFetcher)
             .environmentObject(favoriteComics)
