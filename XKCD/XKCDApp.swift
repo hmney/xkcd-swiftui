@@ -27,7 +27,6 @@ struct XKCDApp: App {
             }
             .environmentObject(comicFetcher)
             .environmentObject(favoriteComics)
-            .environmentObject(VisitedComics())
             
         }
     }
