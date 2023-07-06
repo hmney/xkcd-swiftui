@@ -19,12 +19,11 @@
 		310C768F2A266E49002AC892 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C768E2A266E49002AC892 /* Comic.swift */; };
 		310C76942A28DF3C002AC892 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 310C76932A28DF3C002AC892 /* Kingfisher */; };
 		310C76962A2B7A98002AC892 /* ComicFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C76952A2B7A98002AC892 /* ComicFetcher.swift */; };
+		315AFD5D2A56EAC2002D9DB6 /* xkcd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 315AFD5B2A56EAC2002D9DB6 /* xkcd.otf */; };
+		315AFD5E2A56EAC2002D9DB6 /* xkcd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 315AFD5C2A56EAC2002D9DB6 /* xkcd-Regular.otf */; };
 		31A5C05D2A3267540077C589 /* ComicViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A5C05C2A3267540077C589 /* ComicViewerView.swift */; };
-		31C29F972A541AD700B7FE5A /* xkcd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31C29F952A541AD700B7FE5A /* xkcd-Regular.otf */; };
-		31C29F982A541AD700B7FE5A /* xkcd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31C29F962A541AD700B7FE5A /* xkcd.otf */; };
 		31C29F9B2A541B7E00B7FE5A /* FontModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C29F9A2A541B7E00B7FE5A /* FontModifiers.swift */; };
 		31C29FA02A54D5EB00B7FE5A /* FavoriteComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C29F9F2A54D5EB00B7FE5A /* FavoriteComics.swift */; };
-		31C29FA22A54D61100B7FE5A /* VisitedComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C29FA12A54D61100B7FE5A /* VisitedComics.swift */; };
 		31C29FA42A54D62800B7FE5A /* ComicViewerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C29FA32A54D62800B7FE5A /* ComicViewerStore.swift */; };
 		31DE4DBC2A44877700AB324A /* ComicsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE4DBB2A44877700AB324A /* ComicsGridView.swift */; };
 /* End PBXBuildFile section */
@@ -42,13 +41,12 @@
 		310C768C2A263036002AC892 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		310C768E2A266E49002AC892 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 		310C76952A2B7A98002AC892 /* ComicFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicFetcher.swift; sourceTree = "<group>"; };
+		315AFD5B2A56EAC2002D9DB6 /* xkcd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = xkcd.otf; path = Fonts/xkcd.otf; sourceTree = SOURCE_ROOT; };
+		315AFD5C2A56EAC2002D9DB6 /* xkcd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "xkcd-Regular.otf"; path = "Fonts/xkcd-Regular.otf"; sourceTree = SOURCE_ROOT; };
 		31A5C05C2A3267540077C589 /* ComicViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewerView.swift; sourceTree = "<group>"; };
-		31C29F952A541AD700B7FE5A /* xkcd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "xkcd-Regular.otf"; path = "../../../../../../Downloads/xkcd-Regular.otf"; sourceTree = "<group>"; };
-		31C29F962A541AD700B7FE5A /* xkcd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = xkcd.otf; path = ../../../../../../Downloads/xkcd.otf; sourceTree = "<group>"; };
 		31C29F9A2A541B7E00B7FE5A /* FontModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontModifiers.swift; sourceTree = "<group>"; };
 		31C29F9C2A541EC600B7FE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		31C29F9F2A54D5EB00B7FE5A /* FavoriteComics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteComics.swift; sourceTree = "<group>"; };
-		31C29FA12A54D61100B7FE5A /* VisitedComics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedComics.swift; sourceTree = "<group>"; };
 		31C29FA32A54D62800B7FE5A /* ComicViewerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewerStore.swift; sourceTree = "<group>"; };
 		31DE4DBB2A44877700AB324A /* ComicsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +90,6 @@
 				310C76952A2B7A98002AC892 /* ComicFetcher.swift */,
 				31C29FA32A54D62800B7FE5A /* ComicViewerStore.swift */,
 				31C29F9F2A54D5EB00B7FE5A /* FavoriteComics.swift */,
-				31C29FA12A54D61100B7FE5A /* VisitedComics.swift */,
 				310C767A2A2520C4002AC892 /* Assets.xcassets */,
 				31C29F932A541AB300B7FE5A /* Ressources */,
 				310C767C2A2520C4002AC892 /* Preview Content */,
@@ -119,8 +116,8 @@
 		31C29F942A541ABD00B7FE5A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				31C29F952A541AD700B7FE5A /* xkcd-Regular.otf */,
-				31C29F962A541AD700B7FE5A /* xkcd.otf */,
+				315AFD5C2A56EAC2002D9DB6 /* xkcd-Regular.otf */,
+				315AFD5B2A56EAC2002D9DB6 /* xkcd.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -220,10 +217,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315AFD5D2A56EAC2002D9DB6 /* xkcd.otf in Resources */,
 				310C767E2A2520C4002AC892 /* Preview Assets.xcassets in Resources */,
-				31C29F982A541AD700B7FE5A /* xkcd.otf in Resources */,
+				315AFD5E2A56EAC2002D9DB6 /* xkcd-Regular.otf in Resources */,
 				310C767B2A2520C4002AC892 /* Assets.xcassets in Resources */,
-				31C29F972A541AD700B7FE5A /* xkcd-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +244,6 @@
 				31DE4DBC2A44877700AB324A /* ComicsGridView.swift in Sources */,
 				310C76792A2520C2002AC892 /* SplashView.swift in Sources */,
 				31C29FA42A54D62800B7FE5A /* ComicViewerStore.swift in Sources */,
-				31C29FA22A54D61100B7FE5A /* VisitedComics.swift in Sources */,
 				310C76772A2520C2002AC892 /* XKCDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
