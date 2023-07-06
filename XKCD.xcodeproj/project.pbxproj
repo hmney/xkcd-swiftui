@@ -41,8 +41,8 @@
 		310C768C2A263036002AC892 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		310C768E2A266E49002AC892 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 		310C76952A2B7A98002AC892 /* ComicFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicFetcher.swift; sourceTree = "<group>"; };
-		315AFD5B2A56EAC2002D9DB6 /* xkcd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = xkcd.otf; path = Fonts/xkcd.otf; sourceTree = SOURCE_ROOT; };
-		315AFD5C2A56EAC2002D9DB6 /* xkcd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "xkcd-Regular.otf"; path = "Fonts/xkcd-Regular.otf"; sourceTree = SOURCE_ROOT; };
+		315AFD5B2A56EAC2002D9DB6 /* xkcd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = xkcd.otf; path = XKCD/Ressources/Fonts/xkcd.otf; sourceTree = SOURCE_ROOT; };
+		315AFD5C2A56EAC2002D9DB6 /* xkcd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "xkcd-Regular.otf"; sourceTree = "<group>"; };
 		31A5C05C2A3267540077C589 /* ComicViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewerView.swift; sourceTree = "<group>"; };
 		31C29F9A2A541B7E00B7FE5A /* FontModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontModifiers.swift; sourceTree = "<group>"; };
 		31C29F9C2A541EC600B7FE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
