@@ -7,15 +7,14 @@
 
 import SwiftUI
 import Kingfisher
+import SwiftData
 
 struct ComicViewerView: View {
-    
     @Environment(\.dismiss) private var dismiss: DismissAction
-    @StateObject private var comicViewerStore: ComicViewerStore
-    @EnvironmentObject private var comicFetcher: ComicFetcher
+    @State private var comic: ComicModel
     
-    init(comic: Comic) {
-        _comicViewerStore = StateObject(wrappedValue: ComicViewerStore(comic: comic))
+    init(comic: ComicModel) {
+        _comic = State(wrappedValue: comic)
     }
     
     var body: some View {
@@ -23,7 +22,7 @@ struct ComicViewerView: View {
             
             Spacer()
             
-            KFImage(URL(string: comicViewerStore.comic.image ?? ""))
+            KFImage(URL(string: comic.image ?? ""))
                 .placeholder({
                     Image("loading")
                 })
@@ -34,10 +33,10 @@ struct ComicViewerView: View {
             
             Spacer()
             
-            ComicBottomToolbarView()
+            ComicBottomToolbarView(comic: $comic)
             
         }
-        .navigationTitle(comicViewerStore.comic.safeTitle ?? "")
+        .navigationTitle(comic.safeTitle ?? "")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden()
         .toolbar {
@@ -58,133 +57,152 @@ struct ComicViewerView: View {
                 
             }
         }
-        .environmentObject(comicViewerStore)
     }
 }
 
 struct ComicBottomToolbarView: View {
-
-    @EnvironmentObject var comicViewerStore: ComicViewerStore
-    @EnvironmentObject private var comicFetcher: ComicFetcher
-    @AppStorage("BookmarkedComicNumber") private var bookmarkedComicNumber: Int?
-    @State private var diceNumber: String = ["r1", "r2", "r3", "r4", "r5", "r6"].randomElement() ?? "r1"
-    @State private var isAlternativeAlertPresented = false
-
+    @Query var comics: [ComicModel]
+    @Binding var comic: ComicModel
+ 
     var body: some View {
         HStack(spacing: 20) {
-            Button {
-                if let currentComicIndex = comicFetcher.comics.firstIndex(of: comicViewerStore.comic) {
-                    comicViewerStore.comic = comicFetcher.comics[currentComicIndex - 1]
-                }
-            } label: {
-                Image("prev")
+            PreviousButtonView(comics: comics, comic: $comic)
 
-            }
-            .opacity(comicFetcher.comics[0].num == comicViewerStore.comic.num ? 0 : 1)
+            BookmarkButtonView(comic: comic)
 
-            Button {
-                if bookmarkedComicNumber == comicViewerStore.comic.num {
-                    bookmarkedComicNumber = nil
-                } else {
-                    bookmarkedComicNumber = comicViewerStore.comic.num
-                }
-            } label: {
-                Image(bookmarkedComicNumber == comicViewerStore.comic.num ? "bookmark" : "bookmark_off")
-            }
+            FavoriteButtonView(comic: comic)
+            
+            RandomButtonView(comics: comics, comic: $comic)
+            
+            AltButtonView(comic: comic)
 
-            FavoriteIconView()
-
-            Button {
-                getRandomComic()
-            } label: {
-                Image(diceNumber)
-            }
-
-            Button {
-                isAlternativeAlertPresented = true
-            } label: {
-                Text("ALT")
-                    .font(.xkdcFont(size: 16))
-                    
-            }
-            .fullScreenCover(isPresented: $isAlternativeAlertPresented) {
-                ZStack(alignment: .topTrailing) {
-                    Text(comicViewerStore.comic.alt ?? "")
-                        .font(.xkdcFont(size: 16))
-                        .padding()
-                        .background(.white)
-                    Button {
-                        isAlternativeAlertPresented.toggle()
-
-                    } label: {
-                        Image(systemName: "xmark.circle")
-                            .foregroundColor(.black)
-                            .padding(2)
-                    }
-
-                }
-                .padding()
-                .presentationBackground {
-                    Color.black.opacity(0.8)
-                }
-
-            }
-
-            Button {
-                if let currentComicIndex = comicFetcher.comics.firstIndex(of: comicViewerStore.comic) {
-                    comicViewerStore.comic = comicFetcher.comics[currentComicIndex + 1]
-                }
-            } label: {
-                Image("next")
-
-            }
-            .opacity(comicViewerStore.comic.num == comicFetcher.comics[comicFetcher.comics.count - 1].num ? 0 : 1)
+            NextButtonView(comics: comics, comic: $comic)
         }
     }
+}
 
+struct PreviousButtonView: View {
+    var comics: [ComicModel]
+    @Binding var comic: ComicModel
+    
+    var body: some View {
+        Button {
+            if let curr = comics.firstIndex(of: comic) {
+                comic = comics[curr - 1]
+            }
+        } label: {
+            Image("prev")
+
+        }
+        .opacity(comic == comics.first ? 0 : 1)
+    }
+}
+
+struct BookmarkButtonView: View {
+    var comic: ComicModel
+    @AppStorage("BookmarkedComicNumber") private var bookmarkedComicNumber: Int?
+
+    var body: some View {
+        Button {
+            if bookmarkedComicNumber == comic.num {
+                bookmarkedComicNumber = nil
+            } else {
+                bookmarkedComicNumber = comic.num
+            }
+        } label: {
+            Image(bookmarkedComicNumber == comic.num ? "bookmark" : "bookmark_off")
+        }
+    }
+}
+
+struct RandomButtonView: View {
+    var comics: [ComicModel]
+    @State private var diceNumber: String = ["r1", "r2", "r3", "r4", "r5", "r6"].randomElement() ?? "r1"
+    @Binding var comic: ComicModel
+
+    var body: some View {
+        Button {
+            getRandomComic()
+        } label: {
+            Image(diceNumber)
+        }
+    }
+    
     private func getRandomComic() {
         let diceNumbers = ["r1", "r2", "r3", "r4", "r5", "r6"]
 
         if let randomDice = diceNumbers.randomElement() {
             diceNumber = randomDice
         }
-        if let randomComic = comicFetcher.comics.randomElement() {
-            comicViewerStore.comic = randomComic
+        
+        if let randomComic = comics.randomElement() {
+            comic = randomComic
         }
     }
 }
 
-struct FavoriteIconView: View {
-    @EnvironmentObject var favoriteComics: FavoriteComics
-    @State private var isFavorite = false
-    
-    @EnvironmentObject var store: ComicViewerStore
+struct FavoriteButtonView: View {
+    var comic: ComicModel
     
     var body: some View {
         Button {
-            isFavorite.toggle()
-            save(comic: store.comic)
-
+            comic.isFavorited.toggle()
         } label: {
-            Image(isFavorite ? "favorite" : "favorite_off")
-        }
-        .onChange(of: store.comic, perform: { newValue in
-            isFavorite = favoriteComics.isFavorite(comic: newValue)
-        })
-        .onAppear {
-            isFavorite = favoriteComics.isFavorite(comic: store.comic)
-        }
-        .onDisappear {
-            print(favoriteComics.comics)
+            Image(comic.isFavorited ? "favorite" : "favorite_off")
         }
     }
-    
-    private func save(comic: Comic) {
+}
 
-        if isFavorite {
-            favoriteComics.add(comic: comic)
-        } else {
-            favoriteComics.remove(comic: comic)
+struct AltButtonView: View {
+    var comic: ComicModel
+    @State private var isAlternativeAlertPresented = false
+
+    var body: some View {
+        Button {
+            isAlternativeAlertPresented = true
+        } label: {
+            Text("ALT")
+                .font(.xkdcFont(size: 16))
+                
         }
+        .fullScreenCover(isPresented: $isAlternativeAlertPresented) {
+            ZStack(alignment: .topTrailing) {
+                Text(comic.alt ?? "")
+                    .font(.xkdcFont(size: 16))
+                    .padding()
+                    .background(.white)
+                Button {
+                    isAlternativeAlertPresented.toggle()
+
+                } label: {
+                    Image(systemName: "xmark.circle")
+                        .foregroundColor(.black)
+                        .padding(2)
+                }
+
+            }
+            .padding()
+            .presentationBackground {
+                Color.black.opacity(0.8)
+            }
+
+        }
+    }
+}
+
+struct NextButtonView: View {
+    var comics: [ComicModel]
+    @Binding var comic: ComicModel
+    
+    var body: some View {
+        Button {
+            if let curr = comics.firstIndex(of: comic) {
+                comic = comics[curr + 1]
+            }
+        } label: {
+            Image("next")
+
+        }
+        .opacity(comic == comics.last ? 0 : 1)
     }
 }

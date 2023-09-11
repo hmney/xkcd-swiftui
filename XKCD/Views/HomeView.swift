@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject private var comicFetcher: ComicFetcher
+    @AppStorage("BookmarkedComicNumber") private var bookmarkedComicNumber: Int?
 
-    init() {
-    }
     var body: some View {
         TabView {
-            
-            AllComicsView(comics: comicFetcher.comics)
+            AllComicsView()
                 .tabItem {
                     Label {
                         Text("Comics")
@@ -28,8 +25,7 @@ struct HomeView: View {
 
                 }
             
-            
-            BookmarkedView()
+            BookmarkedView(bookmarkedComicNumber: bookmarkedComicNumber)
                 .tabItem {
                     Label("Bookmark", systemImage: "bookmark.fill")
                     
@@ -53,6 +49,5 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-        
     }
 }

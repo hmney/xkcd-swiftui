@@ -9,14 +9,14 @@ import SwiftUI
 import Kingfisher
 
 struct ComicsGridView: View {
-    private let comicsWithOddNumber: [Comic]
-    private let comicsWithEvenNumber: [Comic]
+    private let comicsWithOddNumber: [ComicModel]
+    private let comicsWithEvenNumber: [ComicModel]
     let viewTitle: String
     
     @State private var searchText = ""
 
 
-    init(comics: [Comic], viewTitle: String) {
+    init(comics: [ComicModel], viewTitle: String) {
         self.comicsWithOddNumber = ComicsGridView.convertComicsList(comics).0
         self.comicsWithEvenNumber = ComicsGridView.convertComicsList(comics).1
         self.viewTitle = viewTitle
@@ -34,12 +34,12 @@ struct ComicsGridView: View {
             ScrollView(.vertical) {
                 HStack(alignment: .top) {
                     LazyVStack(spacing: 10) {
-                        ForEach(comicsWithEvenNumber, id:\.self){ comic in
+                        ForEach(comicsWithEvenNumber, id: \.self) { comic in
                             ComicGridItemView(comic: comic)
                         }
                     }
                     LazyVStack(spacing: 10) {
-                        ForEach(comicsWithOddNumber, id:\.self){ comic in
+                        ForEach(comicsWithOddNumber, id: \.self) { comic in
                             ComicGridItemView(comic: comic)
                                 .onAppear {
                                     print(comic.num!)
@@ -48,7 +48,7 @@ struct ComicsGridView: View {
                     }
                     
                 }
-                .navigationDestination(for: Comic.self) { comic in
+                .navigationDestination(for: ComicModel.self) { comic in
                     ComicViewerView(comic: comic)
                         .toolbar(.hidden, for: .tabBar)
                 }
@@ -72,9 +72,9 @@ struct ComicsGridView: View {
         return nil
     }
     
-    private static func convertComicsList(_ comics: [Comic]) -> ([Comic], [Comic]) {
-        var oddList = [Comic]()
-        var evenList = [Comic]()
+    private static func convertComicsList(_ comics: [ComicModel]) -> ([ComicModel], [ComicModel]) {
+        var oddList = [ComicModel]()
+        var evenList = [ComicModel]()
         let length = comics.count % 2 == 0 ? comics.count : comics.count - 1
         for i in 0..<length{
             if i % 2 == 0 {
@@ -93,7 +93,7 @@ struct ComicsGridView: View {
 }
 
 struct ComicGridItemView: View {
-    let comic: Comic
+    let comic: ComicModel
     
     var body: some View {
         NavigationLink(value: comic) {

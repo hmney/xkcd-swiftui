@@ -6,28 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct XKCDApp: App {
     
-    @StateObject private var comicFetcher = ComicFetcher()
-    @StateObject private var favoriteComics = FavoriteComics()
-    
     var body: some Scene {
         WindowGroup {
-            Group {
-                if comicFetcher.comics.isEmpty {
-                    SplashView()
-                } else {
-                    HomeView()
-                }
-            }
-            .task {
-                try? await comicFetcher.fetchComics()
-            }
-            .environmentObject(comicFetcher)
-            .environmentObject(favoriteComics)
-            
+            ContentView()
         }
+        .modelContainer(for: ComicModel.self)
     }
 }

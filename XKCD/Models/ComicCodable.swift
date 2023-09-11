@@ -1,5 +1,5 @@
 //
-//  ComicsModel.swift
+//  ComicCodable.swift
 //  XKCD
 //
 //  Created by Houssam-Eddine Mney on 30/5/2023.
@@ -7,16 +7,8 @@
 
 import Foundation
 
-class Comic: Codable, Hashable {
-    static func == (lhs: Comic, rhs: Comic) -> Bool {
-        lhs.num == rhs.num
-        
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(num)
-    }
-    
+class ComicCodable: Decodable, Hashable {
+
     var title: String?
     var safeTitle: String?
     var alt: String?
@@ -36,5 +28,13 @@ class Comic: Codable, Hashable {
         case image = "img"
     }
     
+    static func == (lhs: ComicCodable, rhs: ComicCodable) -> Bool {
+        lhs.num == rhs.num
+        
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(num)
+    }
     
 }

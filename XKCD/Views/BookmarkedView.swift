@@ -7,16 +7,20 @@
 
 import SwiftUI
 import Kingfisher
+import SwiftData
 
 struct BookmarkedView: View {
-    @AppStorage("BookmarkedComicNumber") private var bookmarkedComicNumber: Int?
-    @EnvironmentObject private var comicFetcher: ComicFetcher
+    @Query private var comic: [ComicModel]
+    
+    init(bookmarkedComicNumber: Int? = nil) {
+        _comic = Query(filter: #Predicate<ComicModel> { $0.num == bookmarkedComicNumber})
+    }
     
     var body: some View {
         NavigationStack {
             
             Group {
-                if let bookmarkedComicNumber, let comic = comicFetcher.comics.first(where: {$0.num == bookmarkedComicNumber}) {
+                if let comic = comic.first {
                     NavigationLink {
                         ComicViewerView(comic: comic)
                             .toolbar(.hidden, for: .tabBar)

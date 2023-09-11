@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct FavoritesView: View {
-    @EnvironmentObject var favoriteComics: FavoriteComics
+    @Query(filter: #Predicate<ComicModel> { $0.isFavorited }, animation: .easeIn)
+    var comics: [ComicModel]
     
     var body: some View {
         Group {
-            if !favoriteComics.isEmpty {
-                ComicsGridView(comics: favoriteComics.comics, viewTitle: "Favorites")
+            if !comics.isEmpty {
+                ComicsGridView(comics: comics, viewTitle: "Favorites")
             } else {
                 NavigationStack {
                     Text("No favorties comics")

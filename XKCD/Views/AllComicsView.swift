@@ -8,9 +8,10 @@
 import SwiftUI
 import Combine
 import Kingfisher
+import SwiftData
 
 struct AllComicsView: View {
-    let comics: [Comic]
+    @Query private var comics: [ComicModel]
     
     var body: some View {
         if comics.count > 0 {
@@ -21,12 +22,4 @@ struct AllComicsView: View {
         }
     }
 
-}
-
-
-
-struct AllComicsView_Previews: PreviewProvider {
-    static var previews: some View {
-        AllComicsView(comics: [])
-    }
 }

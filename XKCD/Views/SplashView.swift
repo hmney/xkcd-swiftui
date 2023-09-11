@@ -6,13 +6,11 @@
 //
 
 import SwiftUI
-import Combine
 
 struct SplashView: View {
     @State private var isActive = false
    
     var body: some View {
-
         VStack {
             Image("splash")
                 .resizable()
@@ -25,7 +23,6 @@ struct SplashView: View {
             
             
         }
-        
     }
     
 }
