@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ComicCodable: Decodable {
+class ComicCodable: Decodable, Hashable {
 
     var title: String?
     var safeTitle: String?
@@ -26,6 +26,15 @@ class ComicCodable: Decodable {
         
         case safeTitle = "safe_title"
         case image = "img"
+    }
+    
+    static func == (lhs: ComicCodable, rhs: ComicCodable) -> Bool {
+        lhs.num == rhs.num
+        
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(num)
     }
     
 }
