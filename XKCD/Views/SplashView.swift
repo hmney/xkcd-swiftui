@@ -21,7 +21,6 @@ struct SplashView: View {
             Text("Data Loading ...")
                 .padding()
             
-            
         }
     }
     

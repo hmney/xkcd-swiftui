@@ -9,16 +9,13 @@ import SwiftUI
 import Kingfisher
 
 struct ComicsGridView: View {
-    private let comicsWithOddNumber: [ComicModel]
-    private let comicsWithEvenNumber: [ComicModel]
     let viewTitle: String
     
     @State private var searchText = ""
-
+    private var comics: [ComicModel]
 
     init(comics: [ComicModel], viewTitle: String) {
-        self.comicsWithOddNumber = ComicsGridView.convertComicsList(comics).0
-        self.comicsWithEvenNumber = ComicsGridView.convertComicsList(comics).1
+        self.comics = comics
         self.viewTitle = viewTitle
         
         UINavigationBar.appearance().largeTitleTextAttributes = [
@@ -34,16 +31,13 @@ struct ComicsGridView: View {
             ScrollView(.vertical) {
                 HStack(alignment: .top) {
                     LazyVStack(spacing: 10) {
-                        ForEach(comicsWithEvenNumber, id: \.self) { comic in
+                        ForEach(comics.filter({ $0.num! % 2 == 0 }), id: \.self) { comic in
                             ComicGridItemView(comic: comic)
                         }
                     }
                     LazyVStack(spacing: 10) {
-                        ForEach(comicsWithOddNumber, id: \.self) { comic in
+                        ForEach(comics.filter({ $0.num! % 2 != 0 }), id: \.self) { comic in
                             ComicGridItemView(comic: comic)
-                                .onAppear {
-                                    print(comic.num!)
-                                }
                         }
                     }
                     
@@ -71,24 +65,6 @@ struct ComicsGridView: View {
         }
         return nil
     }
-    
-    private static func convertComicsList(_ comics: [ComicModel]) -> ([ComicModel], [ComicModel]) {
-        var oddList = [ComicModel]()
-        var evenList = [ComicModel]()
-        let length = comics.count % 2 == 0 ? comics.count : comics.count - 1
-        for i in 0..<length{
-            if i % 2 == 0 {
-                evenList.append(comics[i])
-            } else {
-                oddList.append(comics[i])
-            }
-        }
-        if length != comics.count {
-            evenList.append(comics[length])
-        }
-        return (oddList, evenList)
-    }
-    
     
 }
 
