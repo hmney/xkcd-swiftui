@@ -41,9 +41,3 @@ struct BookmarkedView: View {
         }
     }
 }
-
-struct BookmarkedView_Previews: PreviewProvider {
-    static var previews: some View {
-        BookmarkedView()
-    }
-}

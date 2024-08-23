@@ -8,7 +8,7 @@
 import SwiftData
 
 @Model
-class ComicModel {
+class ComicModel: Hashable {
     
     @Attribute(.unique) var num: Int?
     var title: String?
@@ -37,4 +37,12 @@ class ComicModel {
         self.transcript = transcript
     }
     
+    static func == (lhs: ComicModel, rhs: ComicModel) -> Bool {
+        lhs.num == rhs.num
+        
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(num)
+    }
 }
